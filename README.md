@@ -10,7 +10,7 @@ Color changes are applied immediately through:
 - `editor.tokenColorCustomizations`
 - `editor.semanticTokenColorCustomizations`
 
-Repository: https://www.github.com/fractalmandala/ide-theme-editor
+Repository: https://www.github.com/fractalmandala/vs-code-live-theme-editor
 
 ## Features
 
