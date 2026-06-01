@@ -1,0 +1,6 @@
+.superpowers/**
+scripts/**
+test/**
+node_modules/**
+*.vsix
+.gitignore

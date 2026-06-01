@@ -1,0 +1,53 @@
+{
+  "name": "live-theme-editor",
+  "displayName": "Live Theme Editor",
+  "description": "Live visual editor for VS Code, Cursor, TRAE, and other VSIX-compatible IDE theme colors.",
+  "version": "0.1.0",
+  "publisher": "fractalmandala",
+  "author": "Fractal Mandala",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/fractalmandala/ide-theme-editor"
+  },
+  "homepage": "https://www.github.com/fractalmandala/ide-theme-editor",
+  "bugs": {
+    "url": "https://www.github.com/fractalmandala/ide-theme-editor/issues"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:liveThemeEditor.open"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "liveThemeEditor.open",
+        "title": "Live Theme Editor: Open"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Live Theme Editor Base",
+        "uiTheme": "vs-dark",
+        "path": "./themes/live-theme-editor-base-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "package": "vsce package --out outputs/live-theme-editor-0.1.0.vsix",
+    "import:templates": "node scripts/import-starter-templates.js",
+    "generate:colors": "node scripts/generate-color-registry.js",
+    "companion": "node scripts/write-companion-preview.js outputs/preview"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.2"
+  },
+  "license": "MIT"
+}

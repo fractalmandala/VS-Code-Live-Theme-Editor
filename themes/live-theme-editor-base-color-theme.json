@@ -1,0 +1,38 @@
+{
+  "name": "Live Theme Editor Base",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#111318",
+    "editor.foreground": "#d7dae0",
+    "sideBar.background": "#171a22",
+    "activityBar.background": "#0d1017",
+    "statusBar.background": "#234063",
+    "panel.background": "#151922"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#7a8494"
+      }
+    },
+    {
+      "scope": ["string"],
+      "settings": {
+        "foreground": "#92c47f"
+      }
+    },
+    {
+      "scope": ["keyword", "storage.type"],
+      "settings": {
+        "foreground": "#d48bd1"
+      }
+    },
+    {
+      "scope": ["entity.name.function", "support.function"],
+      "settings": {
+        "foreground": "#f4c95d"
+      }
+    }
+  ]
+}
